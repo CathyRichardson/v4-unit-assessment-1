@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #89FCD6;
+    padding: 30px;
+}
+h2 {
+    margin: 20px 0px 0px 20px;
+    padding: 0;
+}
+div {
+    border: 1px dashed black;
+    margin: 0px 20px;
+    padding: 10px;
+}
+
+.purpleRec, .blueBox, .pinkBox {
+    display: inline-block;
+    margin: 10px;
+}
+.purpleRec {
+    height: 100px;
+    width: 195px;
+    background-color: #48187F;
+    border: 3px solid #FA221D;
+}
+
+.blueBox {
+    height: 100px;
+    width: 100px;
+    background-color: #0535F8;
+    border: 1px solid #000;
+    box-shadow: 6px 6px 5px #414141;
+}
+
+.pinkBox {
+    height: 200px;
+    width: 200px;
+    background-color: #D77493;
+    border: 1px solid #000;
+}

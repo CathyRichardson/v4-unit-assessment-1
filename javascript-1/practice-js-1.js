@@ -217,6 +217,12 @@ function firstItem(arr, cb) {
 */
 
 //CODE HERE
+function isItBob(obj, cb) {
+  if (obj.name === 'Bob') {
+    cb(true);
+  }
+  cb(false);
+}
 
 //////////////////PROBLEM 17////////////////////
 /*
@@ -226,6 +232,15 @@ function firstItem(arr, cb) {
 */
 
 //CODE HERE
+
+function giveMeDoubles(arr, cb) {
+  // console.log('arr:', arr);
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] *= 2;
+    // console.log(arr);
+  }
+  cb(arr);
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -253,3 +268,16 @@ function firstItem(arr, cb) {
 */
 
 //CODE HERE
+function carFactory(make, model, year) {
+  let car = {
+    make: make,
+    model: model,
+    year: year
+  }
+  if (year > 2018) {
+    car.isNew = true;
+  } else {
+    car.isNew = false;
+  }
+  return car;
+}

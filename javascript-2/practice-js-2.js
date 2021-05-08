@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+let gitDefinition = "A version control of your code, kept on your computer"
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+let gitHubDefinition = " A repository hosting service, sort of like a cloud for code. A version control of your code, kept online. "
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,7 +34,10 @@
 */
 
 //CODE HERE
-
+let init = {
+    description: "connecting your folder to git",
+    code: "git init"
+}
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,7 +45,10 @@
 */
 
 //CODE HERE
-
+let clone = {
+    description: "copies the project from github to your local computer",
+    code: "git clone 'url'"
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +56,10 @@
 */
 
 //CODE HERE
-
+let status = {
+    description: "used to see what has changed with your git files",
+    code: "git status"
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +67,10 @@
 */
 
 //CODE HERE
-
+let add = {
+    description: "tells git to track these files or changes",
+    code: "git add 'the file name or . for the whole file'"
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,6 +78,10 @@
 */
 
 //CODE HERE
+let commit = {
+    description: "marks a save version to my local git",
+    code: "git commit -m 'comment'"
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -74,7 +90,10 @@
 */
 
 //CODE HERE
-
+let addRemote = {
+    description: "connects your local git repo to GitHub repo",
+    code: "git remote add origin 'repo url goes here'"
+}
 //////////////////PROBLEM 9////////////////////
 /*
     Create an object called 'push' with 'description' and 'code' properties 
@@ -82,3 +101,7 @@
 */
 
 //CODE HERE
+let push = {
+    description: "saves your files up to GitHub",
+    code: "git push"
+}

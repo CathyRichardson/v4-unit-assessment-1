@@ -89,3 +89,61 @@ div {
     height: 30px;
     margin-left: 10px;
 }
+
+.bottomRec {
+    height: 200px;
+    width: 200px;
+    background-color: #F5F4DE;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 1;
+    margin-left: 0px;
+}
+
+.greenCircle {
+    width: 165px;
+    height: 165px;
+    background-color: #1D7D1A;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-left: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.marronSquare {
+    height: 95px;
+    width: 95px;
+    background-color: #A22F2E;
+    color: white;
+    position: absolute;
+    margin: 30px 0px 0px 35px;
+    z-index: 3;
+}
+
+.marronSquare p {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.blueCircle {
+    width: 55px;
+    height: 55px;
+    background-color: #0535F8;
+    border-radius: 50%;
+    margin: 30px 0px 0px 35px;
+    position: absolute;
+    z-index: 4;
+}
+
+.fishIcon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 5;
+    margin: 55px;
+}
+
+.bottomSection {
+    height: 220px;
+}

@@ -89,7 +89,7 @@ colorCopy.push('blue');
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
-let middleNums = numbers.slice(1,4);
+let middleNums = numbers.slice(1, 4)
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -106,6 +106,15 @@ let middleNums = numbers.slice(1,4);
 */
 
 //CODE HERE
+let me = {
+  firstName: "Cathy",
+  state: "Utah",
+  age: 12,
+  greeter: function (params) {
+    return `Hello! My name is ${this.firstName} and I live in ${this.state}`;
+  }
+}
+
 
 //////////////////PROBLEM 12////////////////////
 /* 
@@ -121,6 +130,17 @@ let middleNums = numbers.slice(1,4);
 */
 
 // CODE HERE
+function bigOrSmall(arr) {
+  let answers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push("big");
+    } else if (arr[i] <= 100) {
+      answers.push("small");
+    }
+  }
+  return answers;
+}
 
 //////////////////PROBLEM 13////////////////////
 /* 
@@ -133,6 +153,13 @@ let middleNums = numbers.slice(1,4);
 */
 
 //CODE HERE
+function arrayReverser(arr) {
+  let reversed = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed;
+}
 
 //////////////////PROBLEM 14////////////////////
 
@@ -158,16 +185,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -177,6 +204,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function firstItem(arr, cb) {
+  cb(arr[0]);
+}
 
 //////////////////PROBLEM 16////////////////////
 /*

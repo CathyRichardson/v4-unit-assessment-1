@@ -1,0 +1,39 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #EC8382;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid black; 
+}
+h1 {
+    float: left;
+    font-size: 35px; 
+}
+nav {
+    margin: 35px;
+}
+
+li{
+    display: inline;
+    padding: 10px;
+    font-size: 20px;   
+}
+
+.clear {
+    clear: both;
+}
+section {
+    margin: 20px;
+    padding: 10px;
+    border: 5px dotted black;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}

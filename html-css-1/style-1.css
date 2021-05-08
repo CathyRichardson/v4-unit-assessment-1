@@ -44,3 +44,7 @@ img {
 .floatRight {
     float: right;
 }
+
+p {
+    text-align: left;
+}

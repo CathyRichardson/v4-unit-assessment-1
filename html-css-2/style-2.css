@@ -20,6 +20,7 @@ div {
 .purpleRec, .blueBox, .pinkBox {
     display: inline-block;
     margin: 10px;
+    box-sizing: border-box;
 }
 .purpleRec {
     height: 100px;
@@ -49,6 +50,7 @@ div {
     border: 1px solid #000;
     border-radius: 50%;
     margin-left: 25px;
+    padding: 25px 0px 0px 35px;
 }
 
 .circle2 {
@@ -57,6 +59,7 @@ div {
     border: 1px solid #000;
     border-radius: 50%;
     margin-left: 15px;
+    padding-top: 25px;
 }
 
 .circle3 {
@@ -64,5 +67,25 @@ div {
     height: 146px;
     border: 1px solid #000;
     border-radius: 50%;
+    margin-left: 10px;
+}
+
+.coalImg1 {
+    width: 13px;
+    height: 13px;
+    margin: 5px;
+}
+
+.coalImg2 {
+    width: 13px;
+    height: 13px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    display: block;
+}
+
+.carrotImg {
+    width: 30px;
+    height: 30px;
     margin-left: 10px;
 }

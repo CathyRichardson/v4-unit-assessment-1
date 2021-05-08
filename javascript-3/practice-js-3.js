@@ -2,11 +2,13 @@
 /* Create an array called 'groceries' that contains three grocery items of your choice as strings. */
 
 //CODE HERE
+let groceries = ["milk", "bread", "cheese"];
 
 //////////////////STEP 2////////////////////
 /* Create a variable called 'yourName' that is assigned the value of your name as a string. */
 
 //CODE HERE
+let yourName = "Cathy";
 
 //////////////////STEP 3////////////////////
 /*
@@ -17,6 +19,9 @@
 */
 
 //CODE HERE
+function setGroceryListTitle(x) {
+    return `${x}'s Grocery List`;
+}
 
 //////////////////STEP 4////////////////////
 /* 
@@ -27,6 +32,11 @@
 */
 
 //CODE HERE
+function addItem(item) {
+    groceries.push(item);
+    displayData();
+}
+
 
 //////////////////STEP 5////////////////////
 /*
@@ -37,26 +47,39 @@
 */
 
 //CODE HERE
+function removeItem(index) {
+    groceries.splice(index, 1);
+    displayData();
+}
 
 //////////////////STEP 6////////////////////
 /*
-    Create a function called 'checkGroceryCount'. Inside of checkGroceryCount, 
-    you're going to check the total number of groceries in your groceries array using .length. 
-    Using an if/else statement, check if the number of groceries is greater than 5. 
-    If it is, return the string 'That looks like a big trip' from the function. 
-    If the number of groceries is equal to one, return the string '1 item'. 
-    If the amount of groceries is between 1 and 5, return the string 'NUMBEROFGROCERIES items' 
+    Create a function called 'checkGroceryCount'. Inside of checkGroceryCount,
+    you're going to check the total number of groceries in your groceries array using .length.
+    Using an if/else statement, check if the number of groceries is greater than 5.
+    If it is, return the string 'That looks like a big trip' from the function.
+    If the number of groceries is equal to one, return the string '1 item'.
+    If the amount of groceries is between 1 and 5, return the string 'NUMBEROFGROCERIES items'
     with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
 */
 
 //CODE HERE
+function checkGroceryCount() {
+    if (groceries.length > 5) {
+        return "That looks like a big trip";
+    } else if (groceries.length === 1) {
+        return "1 item";
+    } else if (groceries.length > 1 && groceries.length <= 5 ) {
+        return `${groceries.length} items`;
+    }
+}
 
 
 //////////////////Check out your code!////////////////////
 /*
     Open javascript-3/DO_NOT_EDIT/index.html in your browser.
     You should be see a title - 'SomeName's Grocery List' and a subheading that says '0 items.'
-    If you type in the box and click the button, the item should be added to your list. 
-    The items counter should change as you add more items. 
-    If you double click on an item, it should be removed. 
+    If you type in the box and click the button, the item should be added to your list.
+    The items counter should change as you add more items.
+    If you double click on an item, it should be removed.
 */
